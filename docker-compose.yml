@@ -1,0 +1,7 @@
+server:
+    build: .
+    command: "serve -address 0.0.0.0"
+    volumes: 
+        - /tmp/cfssl/certs:/etc/cfssl
+    ports:
+        - "8888:8888"

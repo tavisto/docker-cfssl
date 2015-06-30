@@ -1,7 +1,7 @@
-# Based on cbeer/docker-cfssl
-FROM quay.io/jcjones/golang:20150217
+# Based on cbeer/docker-cfssl and jcjones/docker-cfssl
+FROM golang:1.4
 
-MAINTAINER J.C. Jones "jjones@mozilla.com"
+MAINTAINER Tavis Aitken "<tavisto@tavisto.net"
 
 VOLUME [ "/etc/cfssl" ]
 WORKDIR /etc/cfssl
