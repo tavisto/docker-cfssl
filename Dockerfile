@@ -6,6 +6,6 @@ MAINTAINER Tavis Aitken "<tavisto@tavisto.net"
 VOLUME [ "/etc/cfssl" ]
 WORKDIR /etc/cfssl
 
-RUN go get -u github.com/cloudflare/cfssl/cmd/...
+RUN go get -tags nopkcs11 -u github.com/cloudflare/cfssl/cmd/...
 
 ENTRYPOINT [ "cfssl" ]
